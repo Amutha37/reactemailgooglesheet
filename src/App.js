@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import Feedback from "./components/Feedback";
+import Contact from "./components/Contact";
+import Newsletter from "./components/Newsletter";
+import "./App.css";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <h1 style={{ textAlign: "center" }}>
+        <a href="https://docs.google.com/spreadsheets/d/11g-qe4LVFPSeOGXtBQpvEHS8I5kiKeqCwg4o9xh1a6g/edit#gid=661169676">
+          Sheets View
         </a>
-      </header>
-    </div>
+      </h1>
+      <div className="App">
+        <div className="contact-form form">
+          <h1>Feedback Form</h1>
+          <Feedback />
+        </div>
+        <div className="feedback-form form">
+          <h1>Contact Form</h1>
+          <Contact />
+        </div>
+        <div className="newsletter-form form">
+          <h1>Newsletter</h1>
+          <Newsletter />
+        </div>
+      </div>
+    </>
   );
 }
-
-export default App;
