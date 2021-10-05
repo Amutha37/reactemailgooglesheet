@@ -27,7 +27,7 @@ Documentation for googlesheet link
 
 "https://nocodeapi.com/turn-google-sheet-into-json-api"
 
-User Postman or VScode .rest to run test the URL for POST, GET, PUT and DELETE
+Use Postman or VScode .rest to run test the URL for POST, GET, PUT and DELETE
 
 
 
