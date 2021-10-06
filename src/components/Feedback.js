@@ -23,13 +23,22 @@ export default function Feedback() {
   const sendData = async (e) => {
     e.preventDefault();
     // email
+    // stella
     emailjs
       .sendForm(
-        "service_1lpa9id",
-        "template_n6n6r8p",
+        "service_8wvri2s",
+        "template_l28p8xt",
         e.target,
-        "user_etuc4QBUGfJPQyWZealTj"
+        "user_A0rfHSP2yohzhMSJ4oDEU"
       )
+      // Amutha
+      // emailjs
+      //   .sendForm(
+      //     "service_1lpa9id",
+      //     "template_n6n6r8p",
+      //     e.target,
+      //     "user_etuc4QBUGfJPQyWZealTj"
+      //   )
       .then((res) => {
         console.log(res);
       })

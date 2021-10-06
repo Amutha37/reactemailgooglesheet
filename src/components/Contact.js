@@ -23,7 +23,16 @@ export default function Contact() {
 
   const sendData = async (e) => {
     e.preventDefault();
-    // email
+    // email (get service,template id and intergration user id. e.target are the input data)
+    // stella
+    // emailjs
+    //   .sendForm(
+    //     "service_8wvri2s",
+    //     "template_l28p8xt",
+    //     e.target,
+    //     "user_A0rfHSP2yohzhMSJ4oDEU"
+    //   )
+    // Amutha
     emailjs
       .sendForm(
         "service_1lpa9id",
