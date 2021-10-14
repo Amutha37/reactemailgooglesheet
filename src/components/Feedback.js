@@ -60,9 +60,14 @@ export default function Feedback() {
         ],
       ]),
     };
-
+    // Amutha'sgit
+    // fetch(
+    //   "https://v1.nocodeapi.com/amutha/google_sheets/sDBpXXCxMheMRxIY?tabId=Feedback",
+    //   requestOptions
+    // )
+    // STELLA'S
     fetch(
-      "https://v1.nocodeapi.com/amutha/google_sheets/sDBpXXCxMheMRxIY?tabId=Feedback",
+      "https://v1.nocodeapi.com/stellak/google_sheets/ibmNMYYgtHKNLrwp?tabId=Clients",
       requestOptions
     )
       .then((response) => response.text())

@@ -24,22 +24,23 @@ export default function Contact() {
   const sendData = async (e) => {
     e.preventDefault();
     // email (get service,template id and intergration user id. e.target are the input data)
+
     // stella
-    // emailjs
-    //   .sendForm(
-    //     "service_8wvri2s",
-    //     "template_l28p8xt",
-    //     e.target,
-    //     "user_A0rfHSP2yohzhMSJ4oDEU"
-    //   )
-    // Amutha
     emailjs
       .sendForm(
-        "service_1lpa9id",
-        "template_n6n6r8p",
+        "service_8wvri2s",
+        "template_l28p8xt",
         e.target,
-        "user_etuc4QBUGfJPQyWZealTj"
+        "user_A0rfHSP2yohzhMSJ4oDEU"
       )
+      // Amutha
+      // emailjs
+      //   .sendForm(
+      //     "service_1lpa9id",
+      //     "template_n6n6r8p",
+      //     e.target,
+      //     "user_etuc4QBUGfJPQyWZealTj"
+      //   )
       .then((res) => {
         console.log(res);
       })
@@ -57,8 +58,12 @@ export default function Contact() {
       ]),
     };
 
+    // fetch(
+    //   "https://v1.nocodeapi.com/amutha/google_sheets/sDBpXXCxMheMRxIY?tabId=Contact",
+    //   requestOptions
+    // )
     fetch(
-      "https://v1.nocodeapi.com/amutha/google_sheets/sDBpXXCxMheMRxIY?tabId=Contact",
+      "https://v1.nocodeapi.com/stellak/google_sheets/ibmNMYYgtHKNLrwp?tabId=Clients",
       requestOptions
     )
       .then((response) => response.text())
